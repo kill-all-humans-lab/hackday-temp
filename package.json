@@ -1,0 +1,39 @@
+{
+  "name": "torbookbot",
+  "version": "0.0.1",
+  "description": "Download books with tor from your favourite messenger.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel -w src/ -d lib --source-maps inline --copy-files",
+    "lint": "standard --verbose src/** | snazzy",
+    "start": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kill-all-humans-lab/hackday-temp.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "tor",
+    "books"
+  ],
+  "author": "Kill All Humans Lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kill-all-humans-lab/hackday-temp/issues"
+  },
+  "homepage": "https://github.com/kill-all-humans-lab/hackday-temp#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015-node5": "^1.2.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "co": "^4.6.0",
+    "koa-compose": "^2.4.0",
+    "node-telegram-bot-api": "^0.21.1",
+    "source-map-support": "^0.4.0",
+    "tor-request": "^1.0.5"
+  }
+}
